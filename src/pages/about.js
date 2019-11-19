@@ -5,13 +5,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Info from '../components/Homepage/Info'
 
-const IndexPage = ({ data }) => (
+const AboutPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="About" />
     <BackgroundSection 
     img={data.img.childImageSharp.fluid} 
-    title="Welcome to the { Coffee Hub }" 
-    styleClass="default-background"/>
+    title="About { Coffee Hub }" 
+    styleClass="about-background"/>
     <Info />
   </Layout>
 )
@@ -29,4 +29,4 @@ export const query = graphql`
 `
 
 
-export default IndexPage;
+export default AboutPage;

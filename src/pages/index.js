@@ -4,7 +4,8 @@ import BackgroundSection from '../components/global/BackgroundSection'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Info from '../components/Homepage/Info'
-
+import Menu from '../components/Homepage/Menu'
+import Contact from '../components/Homepage/Contact'
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
@@ -13,6 +14,8 @@ const IndexPage = ({ data }) => (
     title="Welcome to the { Coffee Hub }" 
     styleClass="default-background"/>
     <Info />
+    <Menu items={data.menu} />
+    <Contact />
   </Layout>
 )
 
@@ -22,6 +25,17 @@ export const query = graphql`
     childImageSharp{
       fluid{
         ...GatsbyImageSharpFluid_tracedSVG
+      }
+    }
+  }
+  menu: allContentfulCoffeeHubMenu {
+    edges {
+      node {
+        id
+        name
+        description
+        price
+        category
       }
     }
   }

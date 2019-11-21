@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import logo from '../../images/logo.svg'
-import { FaShoppingCart } from 'react-icons/fa'
+// import { FaShoppingCart } from 'react-icons/fa'
 
 
 
@@ -56,11 +56,8 @@ https://www.iconfinder.com/webalys */}
                     {link.text}
                     </Link>
                     </li>
-                )
+                )     
             })}
-            <li className="nav-item ml-sm-5">
-            <FaShoppingCart className="cart-icon"/>
-            </li>
             </ul>
             </div>
             </nav>

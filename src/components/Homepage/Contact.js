@@ -24,7 +24,7 @@ export default function Contact() {
         <textarea name="description" id="description" className="form-control" rows="5" placeholder="Enter your Message here"></textarea>
         </div>
           {/* submit button*/}
-          <button type="submit" className="btn btn-green btn-block mt-5">Submit</button>
+          <button type="submit" aria-label="submit-button" className="btn btn-green btn-block mt-5">Submit</button>
         </form>
         </div>
         </div>

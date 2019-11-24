@@ -47,6 +47,7 @@ export default class Menu extends Component {
                     type="button" 
                     key={index} 
                     className="btn btn-green m-3" 
+                    aria-label="coffee-type"
                     onClick= {() => {
                         this.handleItems(category)}}>
                     {category}

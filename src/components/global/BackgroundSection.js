@@ -5,15 +5,13 @@ export default function BackgroundSection({
     img,
     styleClass,
     title,
-    subtitle,
     children
   }) {
     return (
       <BackgroundImage className={styleClass} fluid={img}>
-        <h1 className="title text-white text-center">
+      <h1 className="title text-white text-center">
           {title}
         </h1>
-        <h3 className="subtitle text-yellow text-center">{subtitle}</h3>
         {children}
       </BackgroundImage>
     );

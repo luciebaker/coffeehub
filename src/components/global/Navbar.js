@@ -6,20 +6,30 @@ import logo from '../../images/logo.svg'
 
 
 export default class Navbar extends Component {
-   state = {
-       navbarOpen: false,
-       css: "collapse navbar-collapse",
-       links: [
-           {
-               id: 1,
-               path: '/',
-               text: 'home'
-           },
-           {
-            id: 2,
-            path: '/about/',
-            text: 'about'
-        }
+    state = {
+        navbarOpen: false,
+        css: "collapse navbar-collapse",
+        links: [
+            {
+                id: 1,
+                path: '/#info',
+                text: 'about'
+            },
+            {
+                id: 2,
+                path: '/#menu',
+                text: 'menu'
+            },
+            {
+                id: 3,
+                path: '/#events',
+                text: 'events'
+            },
+            {
+                id: 4,
+                path: '/#contact',
+                text: 'contact'
+            }
        ]
    }
 
@@ -45,14 +55,14 @@ Creative Commons (Attribution 3.0 Unported);
 https://www.iconfinder.com/webalys */}
             </Link>
             <button className="navbar-toggler" type="button" onClick={this.navbarHandler}>
-            <span className="navbar-toggler-icon" />
+            <span className="navbar-toggler-icon text-green" />
             </button>
             <div className={this.state.css}>
-            <ul className="navbar-nav mx-auto">
+            <ul className="navbar-nav mx-auto text-green">
             {this.state.links.map(link => {
                 return (
-                    <li key={link.id} className="nav-item">
-                    <Link to={link.path} className="nav-link text-capitalize">
+                    <li key={link.id} className="nav-item text-green">
+                    <Link to={link.path} className="nav-link text-capitalize text-green">
                     {link.text}
                     </Link>
                     </li>

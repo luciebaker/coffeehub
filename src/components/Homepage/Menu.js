@@ -36,7 +36,7 @@ export default class Menu extends Component {
     render() {
         if(this.state.items.length > 0) {
           return (
-            <section className="menu py-5">
+            <section id="menu" className="menu py-5">
             <div className="container">
             <Title title="Our Coffee Menu" />
             {/* categories  */}

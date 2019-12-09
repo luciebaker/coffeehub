@@ -3,7 +3,7 @@ import Title from '../global/Title'
 
 export default function Events() {
     return (
-        <section className="py-5">
+        <section id="events" className="py-5">
         <div className="container">
         <Title title="Coffee & Coding Events"/>
         <div className="row">
